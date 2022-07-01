@@ -1,22 +1,14 @@
-# -*- coding: utf-8 -*-
 import argparse
-import logging
 import os
-import time
-
-import matplotlib.pyplot as plt
-import numpy as np
-import torch
-from torch.utils.data import DataLoader
 
 import cv2
+import numpy as np
+import torch
 from PIL import Image
-import pandas as pd
 
-from nvae.dataset import ImageAttrDataset
 from nvae.utils import add_sn
-from nvae.vae_celeba import NVAE
 from nvae.utils import reparameterize
+from nvae.vae_celeba import NVAE
 
 
 def read_image(path):
